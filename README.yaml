@@ -1,0 +1,89 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: tf-mod-aws-iam-assumed-role
+
+# Canonical Git repo
+github_repo: https://github.com/Callumccr/tf-mod-aws-iam-assumed-role
+
+# # Badges to display
+# badges:
+#   - name: "Build Status"
+#     image: ""
+#     url: ""
+
+# Short description of this project
+description: |-
+  Use the `tf-mod-aws-iam-assumed-role` Terraform module to provision a AWS IAM role with an `sts:AssumeRole` trust and desired resource policies
+# External context to include
+include:
+  - "docs/terraform.md"
+
+# Introduction to this project
+introduction: |-
+  The module provisions the following resources:
+    - An AWS IAM Role with an associated trust policy & desired resource polices
+
+# How to use this module
+usage: |-
+  The below values shown in the usage of this module are purely representative, please replace desired values as required.
+
+  ```hcl
+  ```
+
+# How to get up and running with this project
+quickstart: |-
+  How to get up and running with this project:
+    1. First action
+    2. Second action
+    3. Third action 
+
+  ```hcl
+  ```
+
+# Simple and advanced examples of this project
+examples: |-
+  Simple and advanced examples of this project:
+
+  ### Simple Example:
+  ```hcl
+  ```
+
+  ### Advanced Example:
+  ```hcl
+  ```
+
+# Related projects
+related:
+  - name:
+    description:
+    url:
+
+# Project feferences
+references:
+  - name:
+    description:
+    url:
+
+# Contributor information
+contributors:
+  - name: "Callum Robertson"
+    github: "callumccr"
+    avatar: https://media-exp1.licdn.com/dms/image/C5603AQHb_3oZMZA5YA/profile-displayphoto-shrink_200_200/0?e=1588809600&v=beta&t=5QQQAlHrm1od5fQNZwdjOtbZWvsGcgNBqFRhZWgnPx4
+    homepage: https://www.linkedin.com/in/callum-robertson-1a55b6110/
+
+# Jira information
+jira:
+  - project:
+    project_url:
+    epic: 
+    epic_url:
+    user_story: 
+    user_story_url:
+
+      
+---
