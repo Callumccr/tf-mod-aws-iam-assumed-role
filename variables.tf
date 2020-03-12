@@ -3,13 +3,13 @@
 # -----------------------------------------------------------------------------
 
 variable "aws_region" {
-  description = "(Optional) - The AWS region (e.g. ap-southeast-2). Autoloaded from region.tfvars."
+  description = "The AWS region (e.g. ap-southeast-2). Autoloaded from region.tfvars."
   type        = string
   default     = ""
 }
 
 variable "aws_account_id" {
-  description = "(Optional) - The AWS account id of the provider being deployed to (e.g. 12345678). Autoloaded from account.tfvars"
+  description = "The AWS account id of the provider being deployed to (e.g. 12345678). Autoloaded from account.tfvars"
   type        = string
   default     = ""
 }
@@ -20,6 +20,17 @@ variable "aws_assume_role_arn" {
   default     = ""
 }
 
+variable "aws_assume_role_session_name" {
+  description = "(Optional) - The session name to use when making the AssumeRole call."
+  type        = string
+  default     = ""
+}
+
+variable "aws_assume_role_external_id" {
+  description = "(Optional) - The external ID to use when making the AssumeRole call."
+  type        = string
+  default     = ""
+}
 
 # -----------------------------------------------------------------------------
 # Variables: TF-MOD-AWS-IAM-ASSUMED-ROLE
@@ -87,4 +98,3 @@ variable "tags" {
   default     = {}
   description = "(Optional) - Additional tags"
 }
-
