@@ -106,7 +106,7 @@ Simple and advanced examples of this project:
 
 | Name | Version |
 |------|---------|
-| aws | ~> 2.0 |
+| aws | ~> 2.0 >= 2.7.0 |
 
 ## Inputs
 
