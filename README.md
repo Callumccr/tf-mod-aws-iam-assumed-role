@@ -126,6 +126,7 @@ Simple and advanced examples of this project:
 | name | (Optional) - Solution name, e.g. 'vault', 'consul', 'keycloak', 'k8s', or 'baseline' | `string` | `""` | no |
 | namespace | (Optional) - Namespace, which could be your abbreviated product team, e.g. 'rci', 'mi', 'hp', or 'core' | `string` | `""` | no |
 | path | (Optional) - Path in which to create the role. | `string` | `"/"` | no |
+| require\_mfa\_auth | (Optional) - does the rool trust policy require the caller have have an mfa enabled | `bool` | `false` | no |
 | tags | (Optional) - Additional tags | `map(string)` | `{}` | no |
 
 ## Outputs

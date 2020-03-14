@@ -1,21 +1,3 @@
-
-data "aws_caller_identity" "default" {}
-
-data "aws_iam_policy_document" "default" {
-  statement {
-    actions = ["sts:AssumeRole"]
-    principals {
-      type        = "AWS"
-      identifiers = length(var.trusted_arns) != "" ? ["arn:aws:iam::${data.aws_caller_identity.default.account_id}:root"] : var.trusted_arns
-    }
-    condition {
-      test     = "Bool"
-      variable = "aws:MultiFactorAuthPresent"
-      values   = ["${var.require_mfa_auth}"]
-    }
-  }
-}
-
 resource "aws_iam_role" "default" {
   count              = var.enabled ? 1 : 0
   name               = module.label.id

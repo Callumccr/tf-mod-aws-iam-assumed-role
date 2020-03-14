@@ -47,6 +47,12 @@ variable "path" {
   default     = "/"
 }
 
+variable "require_mfa_auth" {
+  description = "(Optional) - does the rool trust policy require the caller have have an mfa enabled"
+  type        = bool
+  default     = false
+}
+
 
 variable "trusted_arns" {
   type        = list(string)
