@@ -53,7 +53,6 @@ variable "require_mfa_auth" {
   default     = false
 }
 
-
 variable "trusted_arns" {
   type        = list(string)
   description = "(Required) - list of IAM entities to add as principals to the trust policy of the assumed role"
