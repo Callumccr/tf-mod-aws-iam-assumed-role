@@ -2,7 +2,7 @@ resource "aws_iam_role" "default" {
   count              = var.enabled ? 1 : 0
   name               = module.label.id
   path               = var.path
-  assume_role_policy = data.aws_iam_policy_document.default.0.json
+  assume_role_policy = data.aws_iam_policy_document.default.json
   tags               = module.label.tags
 }
 
