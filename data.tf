@@ -6,7 +6,7 @@ data "aws_iam_policy_document" "default" {
     actions = ["sts:AssumeRole"]
     principals {
       type        = "AWS"
-      identifiers = length(var.trusted_arns) != "" ? ["arn:aws:iam::${data.aws_caller_identity.default.account_id}:root"] : var.trusted_arns
+      identifiers = length(var.trusted_arns) != [] ? ["arn:aws:iam::${data.aws_caller_identity.default.account_id}:root"] : var.trusted_arns
     }
     condition {
       test     = "Bool"
